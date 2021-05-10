@@ -1,0 +1,70 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ============================
+NAVBAR 
+=============================== */
+nav.navbar {
+  background-color: #ffffff;
+}
+.navbar.navbar-light .nav-link{
+  color: #00B19B;
+  font-weight: 500;
+  font-size: 16px;
+}
+.navbar .nav-item .nav-link{
+  margin: 0 20px;
+}
+
+.navbar .nav-link.btn{
+  background-color: #00B19B;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 30px;
+}
+.navbar-toggler-icon {
+  color: #000;
+}
+
+/* ============================
+Footer 
+=============================== */
+footer{
+  margin-top: 100px;
+  background-color: #00b19c41;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer h6{
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 18px;
+  font-size: 12px;
+}
+footer hr{
+  border: 1.5px solid rgb(120, 120, 120);
+}
+footer .card {
+  background-color: transparent;
+  border:none;
+}
+footer .term{
+  font-size: 14px;
+}
+footer .term a{
+  margin-left: 10px;
+}
+footer .kurs span{
+  font-weight: 500;
+}
+footer .sosmed{
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+
+    <title>tripbox</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
+
+    <!-- Flat pickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo" width="122px" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tiket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Penginapan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pengalaman</a>
+              </li>
+            </ul>
+            <a class="nav-link" href="#">Masuk</a>
+            <a class="btn nav-link" href="#">Daftar</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+
+    <!-- Start Hero -->
+    <div class="hero parallax">
+      <div class="container">
+        <div class="d-flex justify-content-around" style="flex-wrap: wrap">
+          <div class="title">
+            <span>#Book Everything in One Platform</span>
+            <h1>INDONESIA</h1>
+            <p>Negara Kepulauan terbesar dengan jutaan destinasi yang indah dan menarik wajib untuk di kunjungi.</p>
+          </div>
+          <button class="btn btn-light explore">Explore Now</button>
+        </div>
+        <div class="search">
+          <div class="tag d-flex">
+            <p>Tiket</p>
+            <p class="active">Penginapan</p>
+            <p>Pengalaman</p>
+          </div>
+          <form class="d-flex" action="" method="post">
+            <label for="lokasi" class="form-group d-grid">
+              <label for="lokasi">Lokasi</label>
+              <input id="lokasi" type="text" placeholder="Dimana anda ingin menginap?" />
+            </label>
+            <label for="checkIn" class="form-group d-grid flatpickr">
+              <label for="checkIn">Check in</label>
+              <input id="checkIn" type="text" placeholder="Pilih tanggal" data-input />
+            </label>
+            <label class="form-group d-grid flatpickr">
+              <label for="lokasi">Check Out</label>
+              <input type="text" placeholder="Pilih tanggal" data-input />
+            </label>
+
+            <div for="dropdownMenuLink" class="form-group dropdown" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="dropItem" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropItem-desc">
+                  <label for="lokasi">Check Out</label>
+                  <input type="text" placeholder="Tambah" readonly />
+                </div>
+              </div>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>Dewasa</li>
+                <li>Anak-anak</li>
+                <li>Balita</li>
+              </ul>
+            </div>
+
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <main class="container">
+      <section class="lodging">
+        <h2>Penginapan Pilihan</h2>
+        <article>
+          <figure>
+            <a href="#">
+              <img src="./assets/img/penginapan-1.jpg" alt="" />
+              <figcaption>Satu Rumah</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <img src="./assets/img/penginapan-2.jpg" alt="" />
+              <figcaption>Satu Rumah</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <img src="./assets/img/penginapan-3.jpg" alt="" />
+              <figcaption>Satu Rumah</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <img src="./assets/img/penginapan-4.jpg" alt="" />
+              <figcaption>Satu Rumah</figcaption>
+            </a>
+          </figure>
+        </article>
+      </section>
+      <section class="rent banner">
+        <div class="content">
+          <h2>Jadikan Rumahmu Menghasilkan Uang</h2>
+          <p>Dapatkan Penghasilan tambahan dari peluang baru menyewakan rumah anda</p>
+          <button class="btn btn-light">Pelajari Lebih lanjut</button>
+        </div>
+        <div class="blur"></div>
+      </section>
+      <section class="experience">
+        <h2>Pengalaman Pilihan</h2>
+        <article>
+          <figure>
+            <a href="">
+              <img src="./assets/img/pengalaman-1.jpg" alt="" />
+              <figcaption>Snorkeling di Bintan</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src="./assets/img/pengalaman-2.jpg" alt="" />
+              <figcaption>Sunset di Batam</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src="./assets/img/pengalaman-3.jpg" alt="" />
+              <figcaption>Sky Diving di Bali</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img src="./assets/img/pengalaman-4.jpg" alt="" />
+              <figcaption>Sumatera Tiger di Medan</figcaption>
+            </a>
+          </figure>
+        </article>
+      </section>
+      <section class="build banner">
+        <div class="content">
+          <h2>Bangun Penginapan Anda Bersama Kami</h2>
+          <p>Dapatkan ide bisnis tentang penginapan yang unik bersama kami dan jadikan penginapan anda berbeda dari yang lain</p>
+          <button class="btn btn-light">Pelajari Lebih lanjut</button>
+        </div>
+        <div class="blur"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="access d-flex justify-content-between">
+          <div class="card">
+            <h6>Tentang</h6>
+            <a href="">Cara Kerja Tripbox</a>
+            <a href="">Ruang Berita</a>
+            <a href="">Investor</a>
+            <a href="">Tripbox Plus </a>
+            <a href="">HotelTonight</a>
+            <a href="">Tripbox untuk Bisnis </a>
+            <a href="">Dijadikan nyata oleh Tuan Rumah</a>
+            <a href="">Karier</a>
+          </div>
+          <div class="card">
+            <h6>Komunitas</h6>
+            <a href="">Keberagaman & Rasa Diterima</a>
+            <a href="">Aksesibilitas</a>
+            <a href="">Tripbox Associates </a>
+            <a href="">Frontline Stay </a>
+            <a href="">Referal Tamu </a>
+          </div>
+          <div class="card">
+            <h6>Tuan Rumah</h6>
+            <a href="">Terima tamu di rumah Anda </a>
+            <a href="">Adakan Pengalaman Online </a>
+            <a href="">Adakan Pengalaman </a>
+            <a href="">Menerima tamu dengan bertanggung jawab </a>
+            <a href="">Pusat Informasi </a>
+            <a href="">Pusat Komunitas</a>
+          </div>
+          <div class="card">
+            <h6>Dukungan</h6>
+            <a href="">Respons COVID-19 Tripbox</a>
+            <a href="">Pusat Bantuan</a>
+            <a href="">Opsi pembatalan</a>
+            <a href="">Dukungan Lingkungan Tinggal</a>
+            <a href="">Kepercayaan & Keselamatan</a>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <div class="term d-flex">
+            <p>© 2021 Tripbox, Inc.</p>
+            <a href="">· Privasi</a>
+            <a href="">· Ketentuan</a>
+            <a href="">· Peta Situs</a>
+          </div>
+          <div class="d-flex" style="gap: 20px">
+            <div class="language">
+              <p><i class="fas fa-globe"></i> Bahasa Indonesia (ID)</p>
+            </div>
+            <div class="kurs">
+              <p>Rp <span>IDR</span></p>
+            </div>
+            <div class="sosmed">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-tiktok"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script>
+      document.querySelectorAll(".flatpickr").flatpickr({
+        wrap: true,
+        dateFormat: "d M",
+      });
+    </script>
+  </body>
+</html>

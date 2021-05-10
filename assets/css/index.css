@@ -1,0 +1,291 @@
+/* ============================
+HERO 
+=============================== */
+.hero{
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 0;
+}
+.parallax {
+  /* The image used */
+  background-image: url(../img/bg-hero.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .title{
+  max-width: 650px;
+}
+.hero span{
+  color: #ffff;
+font-size: 25px;
+font-weight: 500;
+}
+.hero h1{
+  font-family: 'Secular One', sans-serif;
+  font-size: 120px;
+  color: #ffff;
+}
+.hero p{
+  color: #ffff;
+  font-size: 19px;
+}
+
+.hero .explore{
+  display: block;
+  margin: auto;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #004E4B;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.42);
+}
+.search {
+  margin-top: 50px;
+}
+.search .tag{
+  background-color: #E5E5E5;
+  width: 400px;
+  justify-content: space-between;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  overflow: hidden;
+  
+}
+.search .tag p{
+  color: #00B19B;
+  margin-bottom: 0;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.search .tag .active{
+  background-color: #00B19B;
+  color: #ffff;
+}
+.search form{
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 60px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 100px;
+  position: relative;
+  overflow: hidden;
+
+}
+.search .form-group{
+  width: 100%;
+  border-left: 2px solid #f2f2f2;
+  padding: 15px 30px;
+  color: #00B19B;
+  cursor: pointer;
+}
+.search .form-group label{
+  font-weight: 500;
+}
+.search .form-group:first-child{
+  border-left: none;
+  padding-left: 80px;
+}
+.search .form-group input{
+  border:none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.search .form-group label{
+  cursor: pointer;
+}
+.search .form-group:hover, .search .form-group:hover input{
+  background-color: #e6e6e6;
+  border-radius: 50px;
+}
+.search .form-group:first-child:hover{
+  border-radius: 0 50px 50px 85px;
+
+}
+
+.search .form-group input:focus{
+  outline: none;
+}
+::placeholder {
+  color: #00B19B;
+  opacity: 1; 
+}
+.search  button{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #00B19B;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown{
+  text-align: left;
+  padding: 0;
+}
+.search .dropdown.form-group {
+  padding: 0;
+
+}
+.dropItem{
+  height: 100%;
+  width: 100%;
+}
+.dropItem-desc{
+  display: grid;
+  padding: 15px 30px;
+
+}
+.dropdown .dropdown-menu{
+  padding:10px;
+}
+/* ============================
+ALL SECTION
+=============================== */
+section{
+  margin-top: 40px;
+}
+section h2{
+  color: #00B19B;
+  font-size: 25px;
+}
+section a{
+  text-decoration: none;
+}
+/* ============================
+PENGINAPAN PILIHAN 
+=============================== */
+.lodging{
+
+}
+.lodging article{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lodging figure{
+
+}
+.lodging figure img{
+  width: 262px;
+}
+.lodging figure figcaption{
+  color: #00B19B;
+}
+
+
+
+/* ============================
+RENT
+=============================== */
+.rent{
+  position: relative;
+  padding: 60px;
+  border-radius: 20px;
+  color: #fff;
+  overflow: hidden;
+  /* The image used */
+  background-image: url(../img/bg-rent.jpg);
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rent .blur{
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #a4dfd800 , #00B19B);
+
+}
+.rent .content{
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+.rent h2{
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.rent button{
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+/* ============================
+EXPERIENCE
+=============================== */
+.experience{
+
+}
+.experience article{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.experience figure{
+
+}
+.experience figure img{
+  width: 262px;
+}
+.experience figure figcaption{
+  color: #00B19B;
+}
+
+/* ============================
+Build
+=============================== */
+.build{
+  position: relative;
+  padding: 60px;
+  border-radius: 20px;
+  color: #fff;
+  overflow: hidden;
+  /* The image used */
+  background-image: url(../img/bg-build.png);
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.build .blur{
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #a4dfd800 , #00B19B);
+
+}
+.build .content{
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+
+}
+.build h2{
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 30px;
+
+}
+.build button{
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+}
